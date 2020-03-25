@@ -1,0 +1,35 @@
+plugins {
+    id 'groovy'
+}
+
+group 'org.qadoc.atool'
+version '1.0'
+
+repositories {
+
+    // 阿里云 maven 仓库
+    maven {
+        url "https://maven.aliyun.com/nexus/content/groups/public"
+    }
+
+    // smartbear maven 仓库（为了下载 soapui jar）
+    maven {
+        url "http://smartbearsoftware.com/repository/maven2"
+    }
+
+    // maven 中央仓库
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+
+    compile 'org.apache.poi:poi-ooxml:3.17'
+    compile 'com.smartbear.soapui:soapui:5.5.0'
+    compile group: 'ch.ethz.ganymed', name: 'ganymed-ssh2', version: '262'
+    compile group: 'com.hierynomus', name: 'sshj', version: '0.27.0'
+    compile group: 'io.rest-assured', name: 'json-path', version: '4.3.0'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'mysql', name: 'mysql-connector-java', version: '8.0.11'
+}
