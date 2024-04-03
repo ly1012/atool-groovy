@@ -22,7 +22,7 @@ repositories {
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    compile 'org.codehaus.groovy:groovy-all:3.0.0'
 
     compile 'org.apache.poi:poi-ooxml:3.17'
     compile 'com.smartbear.soapui:soapui:5.5.0'

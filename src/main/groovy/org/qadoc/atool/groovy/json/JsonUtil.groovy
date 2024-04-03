@@ -2,9 +2,9 @@ package org.qadoc.atool.groovy.json
 
 import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
-import groovy.json.internal.LazyMap
 import io.restassured.path.json.JsonPath
 import com.fasterxml.jackson.databind.ObjectMapper
+import org.apache.groovy.json.internal.LazyMap
 
 /**
  * JSON工具类

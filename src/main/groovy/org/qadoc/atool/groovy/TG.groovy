@@ -11,7 +11,7 @@ import org.qadoc.atool.groovy.json.JsonUtil
 import org.qadoc.atool.groovy.math.MathUtil
 import org.qadoc.atool.groovy.random.RandomData
 import org.qadoc.atool.groovy.remote.SSHFactory
-import org.qadoc.atool.groovy.remote.SSHFactory.Engine
+import org.qadoc.atool.groovy.remote.SSHEngine
 import org.qadoc.atool.groovy.remote.SSHHelper
 import org.qadoc.atool.groovy.security.SecurityHelper
 import org.qadoc.atool.groovy.soapui.SoapUIHelper
@@ -38,7 +38,7 @@ public class TG {
      // 文件工具类
      public static FileUtil file = new FileUtil()
      // SSH 工具类
-     public static SSHHelper ssh = SSHFactory.engine(SSHFactory.Engine.AUTO)
+     public static SSHHelper ssh = SSHFactory.engine(SSHEngine.AUTO)
      // AutoLink 工具类
      public static LinkUtil link = new LinkUtil()
      // Json 工具类
@@ -65,7 +65,7 @@ public class TG {
       * @param engine
       * @return
       */
-     static SSHHelper ssh(Engine engine){
+     static SSHHelper ssh(SSHEngine engine){
           return SSHFactory.engine(engine)
      }
 

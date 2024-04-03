@@ -9,11 +9,21 @@ import org.qadoc.atool.groovy.TG
  * time：2018-05-08
  */
 //Demo
-//获取SQL实例
-//def sql = new JDBCUtil(url,user,password,driver)
-//to do something...
-//关闭实例，释放资源
-//sql.close()
+/*// 获取SQL连接实例
+def sql = TG.jdbc(url, username, password, driver)
+
+// 定义一个外部变量
+def name1 =  'Dierk'
+
+// SQL中使用变量，执行批量插入
+JDBCUtils.executeBatchWithTransaction(sql,"""
+  insert into learn1 (id, name) values (1, '${name1}');
+  insert into learn1 (id, name) values (2, 'Guillaume');
+  insert into learn1 (id, name) values (3, 'Jon');
+""")
+
+// 关闭SQL连接实例
+sql.close()*/
 class JDBCUtil {
 
 	Sql sqlInstance

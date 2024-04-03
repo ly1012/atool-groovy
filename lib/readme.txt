@@ -1,0 +1,1 @@
+本项目中用到的额外的 Jar 包，在 ReadyAPI 的 File - Preference - ReadyAPI - Custom Java libraries(requires restart) 中配置额外 Jar 路径。

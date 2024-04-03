@@ -1,13 +1,8 @@
 package org.qadoc.atool.groovy.soapui
 
-import com.eviware.soapui.config.DatabaseConnectionConfig
-import com.eviware.soapui.model.environment.Environment
 import com.eviware.soapui.model.project.Project
-import com.eviware.soapui.model.testsuite.TestCaseRunContext
 import com.eviware.soapui.support.GroovyUtils
 import groovy.json.JsonSlurper
-import groovy.sql.Sql
-import jdk.internal.util.EnvUtils
 import org.qadoc.atool.groovy.TG
 
 import java.security.InvalidParameterException
